@@ -1,4 +1,8 @@
 fastapi
 uvicorn[standard]
 sentence-transformers
-PyPDF2
+tf-keras
+torch
+python-multipart
+pdfminer.six
+numpy

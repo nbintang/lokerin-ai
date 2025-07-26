@@ -7,7 +7,7 @@ USER user
 ENV PATH="/home/user/.local/bin:$PATH"
 
 # Atur direktori kerja
-WORKDIR /app
+WORKDIR /model
 
 # Salin dan install dependencies
 COPY --chown=user requirements.txt .
@@ -22,4 +22,4 @@ COPY --chown=user . .
 EXPOSE 7860
 
 # Jalankan FastAPI dengan Uvicorn dari app/main.py
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "7860"]
+CMD ["uvicorn", "model.main:app", "--host", "0.0.0.0", "--port", "7860"]
